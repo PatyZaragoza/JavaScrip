@@ -1,4 +1,5 @@
-
+// patricia zaragoza palma.
+// Ing en sistemas Computacionales.
 // Agregar evento para cuando este completo el DOM, DOM es la conversion de HTML a javaScript
 document.addEventListener("DOMContentLoaded", () => {
     const formulario = document.getElementById("calculadora");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             resultado.id = "resultado";
             formulario.appendChild(resultado);
         }
+        // mostrar el resultado de la suma de los numeros 
         resultado.textContent = `Resultado: ${suma}`;
     };
 
