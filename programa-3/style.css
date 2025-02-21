@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.nav {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(43, 226, 220);
+    text-align: center;
+}
+
+.nav_title {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Formulario */
+.task-form {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.form_input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form_button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #2be290;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    background-color: #96b91a;
+}
+
+/* Lista de tareas */
+.task-list {
+    width: 65%;
+    padding: 20px;
+}
+
+.hero-blank {
+    text-align: center;
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.card-task {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition:  all 0.2s ease-in-out;
+}
+
+.card-task:hover{
+    transform: scale(1.05);
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+.task-desc {
+    color: gray;
+}
+
+.card_buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card_buttons button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    
+}
+
+.complete {
+    background-color: green;
+    color: white;
+
+}
